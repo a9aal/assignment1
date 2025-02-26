@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Saira:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --primary-color:#033b4a;
+    --secondary-color:#b981f9;
+    --gray: #4a4a4d;
+    --bg-primary: #ecf0f3;
+    --third-color:#fbbd42;
+    --fourth-color:#f7aade;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+
+body {
+    font-family: 'Poppins', serif;
+}
+
+h1 , h2 {
+    font-family: 'Saira', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*  الكلاسات اللي استخدمها اكثر من مرة  */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding:0 2rem;
+}
+
+.text-primary {
+    color: var(--secondary-color);
+}
+
+.btn-primary{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px ;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all0.3s ease;
+}
+
+.btn-primary:hover{
+    background-color:#8154b5 ;
+
+}
+
+
+/* Header Start */
+#home {
+    background-color: var(--bg-primary);
+    height: 100vh;
+}
+
+#home .navbar {
+    background-color: #08b3ab;
+    border-bottom: 1px solid #ccc ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#home .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin:auto;
+    padding: 1.5rem 2rem;
+}
+
+#home #logo{
+    color: var(--bg-primary);
+    font-size: 24px;
+    font-weight: 800;
+
+}
+
+#home .navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home .navbar nav ul a {
+    margin: 0 15px;
+    color: var(--bg-primary);
+    font-weight: 600;
+}
+
+#home .header-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+}
+
+#home .header-content .content-text{
+    margin-bottom: 5rem;
+}
+
+#home .header-content p span {
+    font-weight: 700;
+    font-size: 20px;   
+}
+
+#home .header-content h1 {
+    font-size: 60px;
+    color: var(--primary-color);  
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2) ; 
+    margin-top: 10px ;
+}
+
+#home .header-content .title {
+    font-size: 20px;
+    color: var(--primary-color);  
+    margin: 10px 0;
+    font-weight: 500;     
+}
+
+header .header-content img {
+    max-width: 450px;
+}
+
+/* Header End */
+
+
+
+/* About start*/
+#about, #education, #course, #Projects {
+    padding: 6rem 0;
+}
+
+#about h2, #education h2, #course h2, #Projects h2, #contact h2 {
+    text-align: center;
+    font-size: 38px;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#contact h2 {
+    text-align: center;
+    font-size: 38px;
+    color: var(--bg-primary);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#about hr{
+    background-color: var(--third-color);
+}
+
+#education hr{
+    background-color: var(--fourth-color);
+}
+
+#course hr{
+    background-color: var(--primary-color);
+}
+
+#Projects hr{
+    background-color: var(--primary-color);
+}
+
+
+#education h4{
+    color: var(--fourth-color);
+}
+
+#about hr, #education hr, #course hr, #Projects hr {
+    Width:100px;
+    height: 3px;
+    border : none;
+    margin: 5px auto 0 ;
+}
+
+#about .about-content {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+
+#about .about-content .col-1 h3 {
+    font-size: 28px;
+    color:var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#about .about-content .col-1 p {
+    color: var(--gray);
+    margin: 20px;
+    line-height: 1.8; /*المساحة فين كل سكر في البرقراف*/
+}
+
+#about .about-content .col-2 p{
+    color:var(--gray);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+
+}
+/* About End*/
+
+
+
+/* education start*/
+#education {
+    background-color: var(--bg-primary);
+}
+
+#education h2, #Projects h2 {
+    color:var(--primary-color);
+}
+
+#education .education-content{
+    margin-top: 4rem;
+    background-color: #f8c7e9;
+}
+
+#education .education-content .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+#education .education-content .row .item {
+    color: var(--bg-primary);
+    background-color: var(--primary-color);
+    margin: 30px;
+    padding: 2rem ;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+#education .education-content .row .item .h4{
+    font-size: 50px;
+    font-weight: 700;
+    color: #f7aade;
+
+}
+
+#education .education-content .row .item:hover{
+    box-shadow: 10px 10px 10px var(--gray);
+
+}
+/* education end*/
+
+/* course start */
+#course {
+    background-color: #e6daf5;
+}
+#course .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
+    text-align: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+#course  .row .item {
+    background-color: var(--bg-primary);
+    padding: 30px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) ;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#course  .row .item:hover {
+    transform:scale(1.04) ;
+}
+
+#course  .row .item img{
+    width: 75px;
+}
+
+#course  .row .item h3{
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+#course  .row .item p{
+    font-size: 14px;
+}
+/* course end */
+
+/* Projects start */ 
+#Projects{
+    background-color: var(--bg-primary);
+}
+
+#Projects .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+#Projects .row .item {
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#Projects .row .item:hover{
+    transform: scale(1.03);
+}
+
+#Projects .row .item .item-content {
+    padding: 20px 15px 30px;
+}
+
+#Projects .row .item .item-content h3 {
+    font-size: 20px;
+    color: var(--bg-primary);
+    margin-bottom: 10px;
+}
+
+#Projects .row .item .item-content p{
+    font-size: 12px;
+    color: var(--bg-primary);
+    font-weight: 300;
+
+}
+
+#Projects .row .item img{
+    max-width: 100%;
+    border-bottom: 2px solid #ccc ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Projects end */
+
+/* contact start*/
+#contact{
+    background-color: var(--primary-color);
+    padding: 4rem 0;
+}
+
+#contact .row{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    column-gap: 2rem;
+    background-color: var(--bg-primary);
+    box-shadow: #fff;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#contact  .row .col-2 p{
+    color:var(--third-color);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+/* contact end*/
+
+/*footer start*/
+#footer{
+    background-color:#08b3ab;
+    color: var(--bg-primary);
+    padding:  1rem 0;
+    text-align: center;
+}
+/*footer end*/
+
+/* Respnsive 768px start */
+@media (max-width: 768px){
+    
+
+    #home .navbar nav {
+        display: block;
+        text-align: center;
+    }
+
+    #home .navbar nav ul {
+        margin-top: 20px;
+    }
+
+    #home .navbar nav ul a{
+        margin: 0 8px;
+    }
+
+    #home .header-content{
+        grid-template-columns: 1fr ;
+    }
+
+    #home .header-content h1{
+        font-size: 50px;
+    }
+
+    #home .header-content .content-text{
+        margin-bottom: 0rem;
+        margin-top: 5rem;
+    }
+
+    header .header-content img {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    #about .about-content,
+    #contact .row {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    #education .education-content .row,
+    #course .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #Projects .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #contact .row img{
+        max-width: 250px;
+        margin: auto;
+
+    }
+}
+/* Respnsive 768px end */
+/* Responsive 992px start */
+@media (max-width: 992px) {
+    #home .navbar nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home .header-content h1 {
+        font-size: 60px;
+    }
+
+    #home .header-content .content-text {
+        margin-top: 4rem;
+    }
+
+    #about .about-content,
+    #contact .row {
+        grid-template-columns: 1fr;
+    }
+
+    #education .education-content .row,
+    #course .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #Projects .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #contact .row img {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+/* Responsive 992px end */
+
+/* Responsive 576px start */
+@media (max-width: 576px) {
+    #home .navbar nav {
+        display: block;
+        text-align: center;
+    }
+
+    #home .navbar nav ul {
+        margin-top: 15px;
+    }
+
+    #home .navbar nav ul a {
+        margin: 0 5px;
+    }
+
+    #home .header-content h1 {
+        font-size: 40px;
+    }
+
+    #home .header-content .content-text {
+        margin-top: 3rem;
+    }
+
+    header .header-content img {
+        max-width: 300px;
+    }
+
+    #about .about-content,
+    #contact .row {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    #education .education-content .row,
+    #course .row {
+        grid-template-columns: 1fr;
+    }
+
+    #Projects .row {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .row img {
+        max-width: 200px;
+        margin: auto;
+    }
+}
+/* Responsive 576px end */
